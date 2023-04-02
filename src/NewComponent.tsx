@@ -28,7 +28,8 @@ export const NewComponent = (props: ArrayComponentType) => {
       </ol>
       <table>
         {props.cars.map((el, index) => {
-          return (
+          debugger;
+          return ( 
             <span>
               <tr>
                 <th key={index + 1}>{el.manufacturer}</th>
