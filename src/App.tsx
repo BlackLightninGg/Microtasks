@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NewComponent } from "./NewComponent";
 import { Button } from "./Button";
+import { UseStateLearn } from "./UseState";
 
 function App() {
   //   const [students, setStudents] = useState([
@@ -41,9 +42,10 @@ function App() {
   return (
     <div className="App">
       {/* <NewComponent students={students} cars={topCars}/> */}
-      <Button name={"Button 1"} callback={()=> ButtonFoo1("Anrew", 29, "live in London")}/>
+      {/* <Button name={"Button 1"} callback={()=> ButtonFoo1("Anrew", 29, "live in London")}/>
       <Button name={"Button 2"} callback={()=> ButtonFoo2("Sanya")}/>
-      <Button name={"Stupid Button"} callback={ButtonFoo3}/>
+      <Button name={"Stupid Button"} callback={ButtonFoo3}/> */}
+      <UseStateLearn/>
     </div>
   );
 }
