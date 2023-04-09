@@ -1,17 +1,16 @@
-const onClickSayName = (name: any) => {
-  console.log(name);
-};
+import React from 'react';
 
+type ButtonPropsType = {
+    addMessage: () => void
+    operator:string
+}
+export const Button = (props: ButtonPropsType) => {
 
-type NameButtonPropsType = {
-  name: string;
-  callback: () => void
-};
+    const onclickButtonHandler = () => {
+        props.addMessage()
+    }
 
-export const Button = (props: NameButtonPropsType) => {
-  return (
-   
-    <button onClick={props.callback}>{props.name}</button>
-    
-  );
+    return (
+        <button onClick={onclickButtonHandler}>{props.operator}</button>
+    );
 };
